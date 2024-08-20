@@ -252,8 +252,13 @@ body {
     border-radius: 0 0 0 10px;
 }
 .status-btn {
-    color: var(--read-btn);
     border-radius: 0 0 10px 0;
+}
+.read {
+    color: var(--read-btn);
+}
+.unread {
+    color: var(--remove-btn);
 }
 
 .footer {

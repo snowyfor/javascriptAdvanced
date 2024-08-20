@@ -20,15 +20,15 @@
     </header> 
     <main class="main text-center">
         <dialog>
-            <form>
+            <form id="form">
                 <button formmethod="dialog" type="submit" class="btn close-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--text-primary)" width="20" height="20"><title>Cancel</title><path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" /></svg>
                 </button>
                 <div class="form-wrapper">
                     <div class="form-title text-center">Add New Book</div>
-                    <input type="text" placeholder="Title" id="titleInput" required/>
-                    <input type="text" placeholder="Author" id="authorInput" required/>
-                    <input type="number" placeholder="Pages" id="pagesInput" required/>
+                    <input type="text" placeholder="Title" id="title" required/>
+                    <input type="text" placeholder="Author" id="author" required/>
+                    <input type="number" placeholder="Pages" id="pages" required/>
                     <label for="readStatus" class="read-status">
                         Have you read it?
                         <input class="inline" type="checkbox" name="read-status" id="readStatus">
@@ -42,6 +42,7 @@
             <div class="text-center">Add Book</div>
         </button>
         <div class="cards-container">
+            <!--DOM Card Structure
             <div class="card">
                 <div class="top">
                     <p class="book-title">PROGRAMMING FOR BEGINNER</p>
@@ -52,105 +53,15 @@
                 </div>
                 <div class="bottom">
                     <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
+                    <button class="btn status-btn read">Read</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <p class="book-title">PROGRAMMING FOR BEGINNER</p>
-                    <div class="desc">
-                        <p class="book-pages">32 pages</p>
-                        <p class="book-author">John Dave</p>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <button class="btn remove-btn">Remove</button>
-                    <button class="btn status-btn">Read</button>
-                </div>
-            </div>
+            -->
         </div>
     </main>
     <footer class="footer">
         <h1 class="book-title">Copyright © 2024 github.com/snowyfor</h1>
     </footer>
-    <script src="./dialog.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
